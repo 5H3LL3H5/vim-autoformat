@@ -509,6 +509,10 @@ if !exists('g:formatters_typescript')
     let g:formatters_typescript = ['tsfmt', 'prettier']
 endif
 
+if !exists('g:formatters_typescriptreact')
+    let g:formatters_typescriptreact = ['tsfmt', 'prettier']
+endif
+
 " Haxe
 if !exists('g:formatdef_haxe_formatter')
     let g:formatdef_haxe_formatter = "'haxelib run formatter --stdin --source " . fnamemodify("%", ":p:h") . "'"
